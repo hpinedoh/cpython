@@ -23,12 +23,12 @@ while i <= Sem:
     i=1+i
     if not os.path.exists(str(i)+'ºSem'):
         os.mkdir(str(i)+'ºSem')
-        print(asig(i-1))
+        asig(i-1)
 #    print('Mi path es', rutaact)
 #    os.mkdir(rutaact)
 matrix_length=len(Asig)
 # print(matrix_length)
-"""j=0
+j=0
 k=0
 for j in range(matrix_length):
     print(j)
@@ -37,11 +37,14 @@ for j in range(matrix_length):
     for k in range(Length_a):
 #        print(Length_a)
         print(Asig[0][k])
-        """
-def asig(i):
+        if not os.path.exists(Asig[0][k]):
+            os.mkdir(Asig[0][k])
+"""def asig(i):
     print('Si entré, mis valores son i', i, 'y k', k)
     Length_a=len(Asig[i])
     k=0
     for k in range(Length_a):
+        os.mkdir(Asig[i][k])
         print(Asig[i][k])
         return(Asig[i][k])
+"""        
