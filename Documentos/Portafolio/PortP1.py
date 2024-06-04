@@ -12,9 +12,16 @@ def Rename(C_nom):
         os.mkdir(C_nom)
 nombre='Portafolio1'
 Carpeta(nombre)
-SemE = 3
+SemE = 1
+os.chdir(nombre)
 match SemE:
     case 1:
-        print('1')
+        AsigS=len(Asig[SemE])
+        ContA = 0
+        CarpS = str(SemE)+'ºSem'
+        Carpeta(CarpS)
+        os.chdir(CarpS)
+        for ContA in range(AsigS):
+            Carpeta(Asig[SemE-1][ContA])
     case 2:
         print('2')
