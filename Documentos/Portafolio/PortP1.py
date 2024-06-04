@@ -10,18 +10,40 @@ def Carpeta(C_nom):
 def Rename(C_nom):
     if not os.path.exists(C_nom):
         os.mkdir(C_nom)
+def Parc():
+    PathO=os.getcwd()
+    os.chdir(PathAc)
+    os.mkdir('1ºPar')
+    os.mkdir('2ºPar')
+    os.mkdir('3ºPar')
+    os.chdir(PathO)
 nombre='Portafolio1'
 Carpeta(nombre)
-SemE = 1
+SemI = 1 
+SemE = 6
 os.chdir(nombre)
-match SemE:
-    case 1:
-        AsigS=len(Asig[SemE])
+#match SemE: Es para que no se me olvide esta posibilidad para aplicar en otras situaciones
+#    case 1:
+while SemI <= SemE:
+    AsigS=len(Asig[SemI-1])
+    ContA = 0
+    CarpS = str(SemI)+'ºSem'
+    Carpeta(CarpS)
+    PathO=os.getcwd()
+    os.chdir(CarpS)
+    for ContA in range(AsigS):
+        PathAc=Asig[SemI-1][ContA]
+        Carpeta(PathAc)
+        Parc()
+    SemI += 1
+    os.chdir(PathO)
+""" case 2:
+        AsigS=len(Asig[SemE-1])
         ContA = 0
         CarpS = str(SemE)+'ºSem'
         Carpeta(CarpS)
         os.chdir(CarpS)
         for ContA in range(AsigS):
-            Carpeta(Asig[SemE-1][ContA])
-    case 2:
-        print('2')
+            PathAc=Asig[SemE-1][ContA]
+            Carpeta(PathAc)
+            Parc() """
