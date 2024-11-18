@@ -1,6 +1,7 @@
 Datos=[]
 Rojo="\033[31m"
 Azul="\033[7;34m"
+Verde="\033[1;32m"
 Normal="\033[0m"
 #Datos=['Heraclio', 'Junior', 'Pinedo Hernández', 'Plaza Madero', '30', 'Centro', 'Villa González Ortega', '7', '8']
 for i in range(9):
@@ -29,7 +30,7 @@ for i in range(9):
     Datos.append(input())
 print(Datos)
 
-print("Los datos que capturaste son:\n")
+print(f"\n{Verde}Los datos que capturaste son:\n")
 print(f"\t\t\t{Rojo}Nombre","\t\t\t\t\tDomicilio","\t\t\t\tCalif. M3S1","\t\tCalif. M3S2")
 print(f"{Azul}\t",Datos[0],"\b",Datos[1],"\b",Datos[2],"\t",Datos[3],"#",Datos[4],"\b,",Datos[5],"\b,",Datos[6],"\t\t",Datos[7],"\t\t\t",Datos[8])
-print(f"{Normal}\nFin")
+print(f"{Verde}\nFin{Normal}")
