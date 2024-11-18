@@ -3,8 +3,8 @@ Rojo="\033[31m"
 Azul="\033[7;34m"
 Verde="\033[1;32m"
 Normal="\033[0m"
-Datos=['Heraclio', 'Junior', 'Pinedo Hernández', 'Plaza Madero', '30', 'Centro', 'Villa González Ortega', '7', '8']
-"""for i in range(9):
+# Datos=['Heraclio', 'Junior', 'Pinedo Hernández', 'Plaza Madero', '30', 'Centro', 'Villa González Ortega', '7', '8']
+for i in range(9):
     if i==0:
         print("Escribe tu primer nombre")
     elif i==1:
@@ -27,7 +27,7 @@ Datos=['Heraclio', 'Junior', 'Pinedo Hernández', 'Plaza Madero', '30', 'Centro'
         print("Escrible tu calificación del M3S1")
     elif i==8:
         print("Escrible tu calificación del M3S2")
-    Datos.append(input()) """
+    Datos.append(input()) 
 print(Datos)
 
 print(f"\n{Verde}\033[3;9HLos datos que capturaste son:\n")
