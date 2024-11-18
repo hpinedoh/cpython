@@ -3,8 +3,8 @@ Rojo="\033[31m"
 Azul="\033[7;34m"
 Verde="\033[1;32m"
 Normal="\033[0m"
-#Datos=['Heraclio', 'Junior', 'Pinedo Hernández', 'Plaza Madero', '30', 'Centro', 'Villa González Ortega', '7', '8']
-for i in range(9):
+Datos=['Heraclio', 'Junior', 'Pinedo Hernández', 'Plaza Madero', '30', 'Centro', 'Villa González Ortega', '7', '8']
+"""for i in range(9):
     if i==0:
         print("Escribe tu primer nombre")
     elif i==1:
@@ -27,10 +27,10 @@ for i in range(9):
         print("Escrible tu calificación del M3S1")
     elif i==8:
         print("Escrible tu calificación del M3S2")
-    Datos.append(input())
+    Datos.append(input()) """
 print(Datos)
 
-print(f"\n{Verde}Los datos que capturaste son:\n")
-print(f"\t\t\t{Rojo}Nombre","\t\t\t\t\tDomicilio","\t\t\t\tCalif. M3S1","\t\tCalif. M3S2")
-print(f"{Azul}\t",Datos[0],"\b",Datos[1],"\b",Datos[2],"\t",Datos[3],"#",Datos[4],"\b,",Datos[5],"\b,",Datos[6],"\t\t",Datos[7],"\t\t\t",Datos[8])
+print(f"\n{Verde}\033[3;9HLos datos que capturaste son:\n")
+print(f"\033[5;9H{Rojo}Nombre","\033[5;45HDomicilio","\033[5;98HCalif. M3S1","\033[5;115HCalif. M3S2")
+print(f"\033[6;9H{Azul}\b",Datos[0],"\b",Datos[1],"\b",Datos[2],"\033[6;45H\b",Datos[3],"#",Datos[4],"\b,",Datos[5],"\b,",Datos[6],"\033[6;102H",Datos[7],"\033[6;119H",Datos[8])
 print(f"{Verde}\nFin{Normal}")
