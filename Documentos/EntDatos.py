@@ -28,9 +28,10 @@ for i in range(9):
     elif i==8:
         print("Escrible tu calificación del M3S2")
     Datos.append(input()) 
-print(Datos)
+import os    
+os.system('clear')
 
-print(f"\n{Verde}\033[3;9HLos datos que capturaste son:\n")
-print(f"\033[5;9H{Rojo}Nombre","\033[5;45HDomicilio","\033[5;98HCalif. M3S1","\033[5;115HCalif. M3S2")
-print(f"\033[6;9H{Azul}\b",Datos[0],"\b",Datos[1],"\b",Datos[2],"\033[6;45H\b",Datos[3],"#",Datos[4],"\b,",Datos[5],"\b,",Datos[6],"\033[6;102H",Datos[7],"\033[6;119H",Datos[8])
+print(f"\n{Verde}\033[22;9HLos datos que capturaste son:\n")
+print(f"\033[24;9H{Rojo}Nombre","\033[24;45HDomicilio","\033[24;98HCalif. M3S1","\033[24;115HCalif. M3S2")
+print(f"\033[25;9H{Azul}\b",Datos[0],"\b",Datos[1],"\b",Datos[2],"\033[25;45H\b",Datos[3],"#",Datos[4],"\b,",Datos[5],"\b,",Datos[6],"\033[25;102H",Datos[7],"\033[25;119H",Datos[8])
 print(f"{Verde}\nFin{Normal}")
