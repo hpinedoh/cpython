@@ -32,6 +32,7 @@ import os
 os.system('clear')
 
 print(f"\n{Verde}\033[22;9HLos datos que capturaste son:\n")
-print(f"\033[24;9H{Rojo}Nombre","\033[24;45HDomicilio","\033[24;98HCalif. M3S1","\033[24;115HCalif. M3S2")
-print(f"\033[25;9H{Azul}\b",Datos[0],"\b",Datos[1],"\b",Datos[2],"\033[25;45H\b",Datos[3],"#",Datos[4],"\b,",Datos[5],"\b,",Datos[6],"\033[25;102H",Datos[7],"\033[25;119H",Datos[8])
+print(Datos)
+print(f"\033[28;9H{Rojo}Nombre","\033[28;45HDomicilio","\033[28;98HCalif. M3S1","\033[28;115HCalif. M3S2")
+print(f"\033[30;9H{Azul}\b",Datos[0],"\b",Datos[1],"\b",Datos[2],"\033[30;45H\b",Datos[3],"#",Datos[4],"\b,",Datos[5],"\b,",Datos[6],"\033[30;102H",Datos[7],"\033[30;119H",Datos[8])
 print(f"{Verde}\nFin{Normal}")
